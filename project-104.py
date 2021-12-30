@@ -13,7 +13,6 @@ for i in range(len(file_data)):
     new_data.append(float(n_num))
 
 n = len(new_data)
-new_data.sort()
 
 # Calculating mean
 def calculateMean():
@@ -27,6 +26,8 @@ def calculateMean():
 
 # Calculating median
 def calculateMedian():
+    new_data.sort()
+    
     if n%2 == 0:
         median1 = float(new_data[n//2])
         median2 = float(new_data[n//2-1])
